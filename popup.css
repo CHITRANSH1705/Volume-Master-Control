@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    width: 300px;
+    background: #1e1e1e;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Header */
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #00c3ff;
+}
+
+/* Tabs container */
+#tabs-list {
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Individual tab */
+.tab {
+    background: #2b2b2b;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 8px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Tab title */
+.tab strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Volume slider */
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: #73b8cd;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Slider handle */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #00c3ff;
+}
+
+/* Scrollbar styling */
+#tabs-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#tabs-list::-webkit-scrollbar-thumb {
+    background: #00c3ff;
+    border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Volume Controller",
+  "version": "1.0",
+  "description": "Control volume of individual tabs",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
